@@ -9,7 +9,7 @@ import Foundation
 
 public enum NetworkError: Error {
     case noResponse
-    case connectionFail
+    case connectionFail(statusCode: Int)
     case unknownError
     case parseCodable
     case invalidURL

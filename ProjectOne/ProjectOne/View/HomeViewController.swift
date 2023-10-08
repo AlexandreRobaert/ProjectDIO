@@ -12,14 +12,7 @@ class HomeViewController: UIViewController {
     private let service: ServiceProtocol = NetworkService()
     
     @IBAction func nextScreen(_ sender: UIButton) {
-        Task {
-            do {
-                let result: [LogoResponse] = try await service.request(FindLogoRequest.logo(name: "apple"))
-                print(result.first?.imageURL)
-            } catch {
-                print(error.localizedDescription)
-            }
-        }
+        
     }
 }
 

@@ -12,12 +12,12 @@ public enum FindLogoRequest: Request {
     case logo(name: String)
     
     public var path: String {
-        "/logo"
+        "/v1/logo"
     }
     
     public var headers: [String : Any]? {
         if let token = Bundle.main.object(forInfoDictionaryKey: "X-Api-Key") as? String {
-            return ["X-Api-Token": token]
+            return ["X-Api-Key": token]
         }
         return nil
     }

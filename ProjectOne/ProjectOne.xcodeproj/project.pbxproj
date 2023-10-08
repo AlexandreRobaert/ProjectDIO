@@ -21,6 +21,7 @@
 		AC5185E22AD315CB00878660 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185E12AD315CB00878660 /* NetworkError.swift */; };
 		AC5185E72AD326C200878660 /* FindLogoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185E62AD326C200878660 /* FindLogoRequest.swift */; };
 		AC5185EA2AD32B8300878660 /* LogoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185E92AD32B8300878660 /* LogoResponse.swift */; };
+		AC6D20F42AD3719800C5ABF8 /* ListLogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		AC5185E12AD315CB00878660 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		AC5185E62AD326C200878660 /* FindLogoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLogoRequest.swift; sourceTree = "<group>"; };
 		AC5185E92AD32B8300878660 /* LogoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoResponse.swift; sourceTree = "<group>"; };
+		AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLogoViewController.swift; sourceTree = "<group>"; };
 		D4965C48C393B76BBE3F6ED2 /* Pods_ProjectOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 				AC5185C72AD230C600878660 /* HomeViewController.swift */,
 				AC5185C92AD230C700878660 /* Main.storyboard */,
 				AC5185CE2AD230C800878660 /* LaunchScreen.storyboard */,
+				AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6D20F42AD3719800C5ABF8 /* ListLogoViewController.swift in Sources */,
 				AC5185C82AD230C600878660 /* HomeViewController.swift in Sources */,
 				AC5185E22AD315CB00878660 /* NetworkError.swift in Sources */,
 				AC5185C42AD230C600878660 /* AppDelegate.swift in Sources */,

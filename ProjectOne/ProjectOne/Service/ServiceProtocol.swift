@@ -8,13 +8,13 @@
 import Foundation
 
 public protocol ServiceProtocol {
-    
     func request<T: Codable>(_ request: Request) async throws -> T
 }
 
 extension ServiceProtocol {
     
     func convertRequest(_ request: Request) throws -> URLRequest {
+        
         var urlComponents = URLComponents()
         urlComponents.scheme = request.scheme
         urlComponents.host = request.baseURL

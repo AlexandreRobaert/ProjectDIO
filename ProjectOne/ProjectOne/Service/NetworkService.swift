@@ -22,7 +22,12 @@ public class NetworkService: ServiceProtocol {
         guard let response = response as? HTTPURLResponse else {
             throw NetworkError.unknownError
         }
-        
+        #if DEBUG
+        print("\(urlRequest.httpMethod ?? "") URL ->", urlRequest.url?.absoluteURL ?? "", "|| StatusCode:", response.statusCode)
+        request.headers?.forEach { item in
+            print("HEADER:", "\(item.key) =", item.value)
+        }
+        #endif
         switch response.statusCode {
         case 204:
             throw NetworkError.noResponse
@@ -33,7 +38,7 @@ public class NetworkService: ServiceProtocol {
                 throw NetworkError.parseCodable
             }
         default:
-            throw NetworkError.connectionFail
+            throw NetworkError.connectionFail(statusCode: response.statusCode)
         }
     }
 }

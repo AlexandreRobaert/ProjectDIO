@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BaseURL</key>
-	<string>api.api-ninjas.com/v1</string>
+	<string>api.api-ninjas.com</string>
 	<key>X-Api-Key</key>
 	<string>cufRlMjsrqRLNFTtK9J+aQ==Pq25T3zOrN757bBX</string>
 	<key>UIApplicationSceneManifest</key>
