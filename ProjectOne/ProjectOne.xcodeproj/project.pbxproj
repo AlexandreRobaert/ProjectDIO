@@ -22,6 +22,8 @@
 		AC5185E72AD326C200878660 /* FindLogoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185E62AD326C200878660 /* FindLogoRequest.swift */; };
 		AC5185EA2AD32B8300878660 /* LogoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185E92AD32B8300878660 /* LogoResponse.swift */; };
 		AC6D20F42AD3719800C5ABF8 /* ListLogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */; };
+		AC6D20F72AD3732D00C5ABF8 /* LogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D20F52AD3732D00C5ABF8 /* LogoTableViewCell.swift */; };
+		AC6D20F82AD3732D00C5ABF8 /* LogoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6D20F62AD3732D00C5ABF8 /* LogoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		AC5185E62AD326C200878660 /* FindLogoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLogoRequest.swift; sourceTree = "<group>"; };
 		AC5185E92AD32B8300878660 /* LogoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoResponse.swift; sourceTree = "<group>"; };
 		AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLogoViewController.swift; sourceTree = "<group>"; };
+		AC6D20F52AD3732D00C5ABF8 /* LogoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTableViewCell.swift; sourceTree = "<group>"; };
+		AC6D20F62AD3732D00C5ABF8 /* LogoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoTableViewCell.xib; sourceTree = "<group>"; };
 		D4965C48C393B76BBE3F6ED2 /* Pods_ProjectOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +123,8 @@
 				AC5185C92AD230C700878660 /* Main.storyboard */,
 				AC5185CE2AD230C800878660 /* LaunchScreen.storyboard */,
 				AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */,
+				AC6D20F52AD3732D00C5ABF8 /* LogoTableViewCell.swift */,
+				AC6D20F62AD3732D00C5ABF8 /* LogoTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 			files = (
 				AC5185D02AD230C800878660 /* LaunchScreen.storyboard in Resources */,
 				AC5185CD2AD230C800878660 /* Assets.xcassets in Resources */,
+				AC6D20F82AD3732D00C5ABF8 /* LogoTableViewCell.xib in Resources */,
 				AC5185CB2AD230C700878660 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +271,7 @@
 			files = (
 				AC6D20F42AD3719800C5ABF8 /* ListLogoViewController.swift in Sources */,
 				AC5185C82AD230C600878660 /* HomeViewController.swift in Sources */,
+				AC6D20F72AD3732D00C5ABF8 /* LogoTableViewCell.swift in Sources */,
 				AC5185E22AD315CB00878660 /* NetworkError.swift in Sources */,
 				AC5185C42AD230C600878660 /* AppDelegate.swift in Sources */,
 				AC5185E72AD326C200878660 /* FindLogoRequest.swift in Sources */,

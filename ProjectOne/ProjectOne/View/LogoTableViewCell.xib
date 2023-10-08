@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="102" id="KGk-i7-Jjw" customClass="LogoTableViewCell" customModule="ProjectOne" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHy-fw-Mkx">
+                        <rect key="frame" x="185.66666666666666" y="5" width="1" height="92"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="nIC-zM-ehV"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="8D1-yU-H44">
+                        <rect key="frame" x="8" y="8" width="186" height="86"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da empresa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tb-nK-hLy">
+                        <rect key="frame" x="202" y="8" width="162" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APLL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xq9-s9-gLI">
+                        <rect key="frame" x="202" y="70" width="162" height="27"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                        <color key="textColor" systemColor="tableCellBlueTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcy-tz-BHH">
+                        <rect key="frame" x="202" y="50" width="162" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eHy-fw-Mkx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="1Xo-RX-erI"/>
+                    <constraint firstAttribute="bottom" secondItem="eHy-fw-Mkx" secondAttribute="bottom" constant="5" id="1lk-zA-N3S"/>
+                    <constraint firstItem="6Tb-nK-hLy" firstAttribute="leading" secondItem="8D1-yU-H44" secondAttribute="trailing" constant="8" symbolic="YES" id="42O-nv-sgE"/>
+                    <constraint firstItem="xq9-s9-gLI" firstAttribute="leading" secondItem="8D1-yU-H44" secondAttribute="trailing" constant="8" symbolic="YES" id="4Rz-zT-eb6"/>
+                    <constraint firstItem="8D1-yU-H44" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="5UI-ue-g7b"/>
+                    <constraint firstAttribute="trailing" secondItem="xq9-s9-gLI" secondAttribute="trailing" constant="8" id="67S-5V-mbg"/>
+                    <constraint firstItem="8D1-yU-H44" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="DnF-We-aPc"/>
+                    <constraint firstItem="xq9-s9-gLI" firstAttribute="top" secondItem="Zcy-tz-BHH" secondAttribute="bottom" constant="4" id="EYn-Vx-avh"/>
+                    <constraint firstAttribute="trailing" secondItem="6Tb-nK-hLy" secondAttribute="trailing" constant="8" id="EkO-qd-328"/>
+                    <constraint firstItem="eHy-fw-Mkx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="FsL-Gx-kfg"/>
+                    <constraint firstAttribute="bottom" secondItem="8D1-yU-H44" secondAttribute="bottom" constant="8" id="H0L-sj-5MB"/>
+                    <constraint firstAttribute="bottom" secondItem="xq9-s9-gLI" secondAttribute="bottom" constant="5" id="KXz-NV-jnI"/>
+                    <constraint firstItem="6Tb-nK-hLy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Ro8-Ra-eBl"/>
+                    <constraint firstItem="Zcy-tz-BHH" firstAttribute="leading" secondItem="8D1-yU-H44" secondAttribute="trailing" constant="8" symbolic="YES" id="WnN-1n-2Sr"/>
+                    <constraint firstAttribute="trailing" secondItem="Zcy-tz-BHH" secondAttribute="trailing" constant="8" id="WxI-Ak-AJV"/>
+                    <constraint firstItem="8D1-yU-H44" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gIB-Sa-X7I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageLogo" destination="8D1-yU-H44" id="d5R-ls-SkI"/>
+                <outlet property="name" destination="6Tb-nK-hLy" id="cre-xB-hSF"/>
+                <outlet property="ticketValue" destination="xq9-s9-gLI" id="Pwg-xN-gzd"/>
+            </connections>
+            <point key="canvasLocation" x="181.67938931297709" y="-12.67605633802817"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="apple" width="560" height="500"/>
+        <systemColor name="tableCellBlueTextColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
