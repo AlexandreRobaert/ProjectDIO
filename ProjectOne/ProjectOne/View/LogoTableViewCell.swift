@@ -8,16 +8,22 @@
 import UIKit
 import Kingfisher
 
+extension UITableViewCell {
+    static var identifier: String {
+        String(describing: self)
+    }
+}
+
 class LogoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var imageLogo: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var ticketValue: UILabel!
     
-    func setupCell(imageURL: String, name: String, ticket: String) {
-        imageLogo.loadImage(url: imageURL)
-        self.name.text = name
-        self.ticketValue.text = ticket
+    func setupCell(model: LogoModel) {
+        self.name.text = model.name
+        self.ticketValue.text = model.ticker
+        imageLogo.loadImage(url: model.imageURL)
     }
 }
 

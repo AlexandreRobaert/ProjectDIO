@@ -33,12 +33,28 @@ public class NetworkService: ServiceProtocol {
             throw NetworkError.noResponse
         case 200...299:
             do {
-                return try JSONDecoder().decode(T.self, from: data)
+                let response = try JSONDecoder().decode(T.self, from: data)
+                
+                #if DEBUG
+                prettyJson(model: response)
+                #endif
+                
+                return response
             } catch {
                 throw NetworkError.parseCodable
             }
         default:
             throw NetworkError.connectionFail(statusCode: response.statusCode)
+        }
+    }
+    
+    private func prettyJson<T: Codable>(model: T) {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        if let data = try? encoder.encode(model), let json = String(data: data, encoding: .utf8) {
+            print("RESPONSE START ---------------------------------------------")
+            print(json)
+            print("RESPONSE END -----------------------------------------------")
         }
     }
 }

@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     private let service: ServiceProtocol = NetworkService()
     
     @IBAction func nextScreen(_ sender: UIButton) {
-        
+        navigationController?.pushViewController(ListLogoViewController(), animated: true)
     }
 }
-

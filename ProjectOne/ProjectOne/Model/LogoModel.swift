@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct LogoResponse: Codable {
+public struct LogoModel: Codable {
     
     enum CodingKeys: String, CodingKey {
         case name = "name"

@@ -20,10 +20,12 @@
 		AC5185E02AD315B000878660 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185DF2AD315B000878660 /* RequestProtocol.swift */; };
 		AC5185E22AD315CB00878660 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185E12AD315CB00878660 /* NetworkError.swift */; };
 		AC5185E72AD326C200878660 /* FindLogoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185E62AD326C200878660 /* FindLogoRequest.swift */; };
-		AC5185EA2AD32B8300878660 /* LogoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185E92AD32B8300878660 /* LogoResponse.swift */; };
+		AC5185EA2AD32B8300878660 /* LogoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185E92AD32B8300878660 /* LogoModel.swift */; };
 		AC6D20F42AD3719800C5ABF8 /* ListLogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */; };
 		AC6D20F72AD3732D00C5ABF8 /* LogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D20F52AD3732D00C5ABF8 /* LogoTableViewCell.swift */; };
 		AC6D20F82AD3732D00C5ABF8 /* LogoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6D20F62AD3732D00C5ABF8 /* LogoTableViewCell.xib */; };
+		AC97E4872AD87F4A007A29EC /* ListLogoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97E4862AD87F4A007A29EC /* ListLogoViewModel.swift */; };
+		AC97E4892AD8814A007A29EC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97E4882AD8814A007A29EC /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,10 +45,12 @@
 		AC5185DF2AD315B000878660 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		AC5185E12AD315CB00878660 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		AC5185E62AD326C200878660 /* FindLogoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLogoRequest.swift; sourceTree = "<group>"; };
-		AC5185E92AD32B8300878660 /* LogoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoResponse.swift; sourceTree = "<group>"; };
+		AC5185E92AD32B8300878660 /* LogoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoModel.swift; sourceTree = "<group>"; };
 		AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLogoViewController.swift; sourceTree = "<group>"; };
 		AC6D20F52AD3732D00C5ABF8 /* LogoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTableViewCell.swift; sourceTree = "<group>"; };
 		AC6D20F62AD3732D00C5ABF8 /* LogoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoTableViewCell.xib; sourceTree = "<group>"; };
+		AC97E4862AD87F4A007A29EC /* ListLogoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLogoViewModel.swift; sourceTree = "<group>"; };
+		AC97E4882AD8814A007A29EC /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		D4965C48C393B76BBE3F6ED2 /* Pods_ProjectOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,9 +96,9 @@
 		AC5185C22AD230C600878660 /* ProjectOne */ = {
 			isa = PBXGroup;
 			children = (
-				AC5185E82AD32B7200878660 /* Model */,
 				AC5185C32AD230C600878660 /* AppDelegate.swift */,
 				AC5185C52AD230C600878660 /* SceneDelegate.swift */,
+				AC5185E82AD32B7200878660 /* Model */,
 				AC5185E32AD315E900878660 /* Service */,
 				AC5185E42AD3160D00878660 /* View */,
 				AC5185E52AD3161900878660 /* Resources */,
@@ -123,6 +127,7 @@
 				AC5185C92AD230C700878660 /* Main.storyboard */,
 				AC5185CE2AD230C800878660 /* LaunchScreen.storyboard */,
 				AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */,
+				AC97E4862AD87F4A007A29EC /* ListLogoViewModel.swift */,
 				AC6D20F52AD3732D00C5ABF8 /* LogoTableViewCell.swift */,
 				AC6D20F62AD3732D00C5ABF8 /* LogoTableViewCell.xib */,
 			);
@@ -140,7 +145,8 @@
 		AC5185E82AD32B7200878660 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AC5185E92AD32B8300878660 /* LogoResponse.swift */,
+				AC5185E92AD32B8300878660 /* LogoModel.swift */,
+				AC97E4882AD8814A007A29EC /* Observable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,8 +282,10 @@
 				AC5185C42AD230C600878660 /* AppDelegate.swift in Sources */,
 				AC5185E72AD326C200878660 /* FindLogoRequest.swift in Sources */,
 				AC5185DE2AD3156D00878660 /* HttpMethod.swift in Sources */,
-				AC5185EA2AD32B8300878660 /* LogoResponse.swift in Sources */,
+				AC5185EA2AD32B8300878660 /* LogoModel.swift in Sources */,
 				AC5185C62AD230C600878660 /* SceneDelegate.swift in Sources */,
+				AC97E4872AD87F4A007A29EC /* ListLogoViewModel.swift in Sources */,
+				AC97E4892AD8814A007A29EC /* Observable.swift in Sources */,
 				AC5185DA2AD30F4600878660 /* NetworkService.swift in Sources */,
 				AC5185DC2AD313CE00878660 /* ServiceProtocol.swift in Sources */,
 				AC5185E02AD315B000878660 /* RequestProtocol.swift in Sources */,
