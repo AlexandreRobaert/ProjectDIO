@@ -16,6 +16,10 @@ final class ListLogoViewModel {
         self.service = service
     }
     
+    var dataSourceCount: Int {
+        dataSource.value?.count ?? 0
+    }
+    
     func fetchLogo(filter: String) async throws {
         dataSource.value = try await service.request(FindLogoRequest.logo(name: filter))
     }

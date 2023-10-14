@@ -26,6 +26,7 @@
 		AC6D20F82AD3732D00C5ABF8 /* LogoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6D20F62AD3732D00C5ABF8 /* LogoTableViewCell.xib */; };
 		AC97E4872AD87F4A007A29EC /* ListLogoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97E4862AD87F4A007A29EC /* ListLogoViewModel.swift */; };
 		AC97E4892AD8814A007A29EC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97E4882AD8814A007A29EC /* Observable.swift */; };
+		AC97E4912ADAD29A007A29EC /* EmptyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC97E48F2ADAD29A007A29EC /* EmptyViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		AC6D20F62AD3732D00C5ABF8 /* LogoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoTableViewCell.xib; sourceTree = "<group>"; };
 		AC97E4862AD87F4A007A29EC /* ListLogoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLogoViewModel.swift; sourceTree = "<group>"; };
 		AC97E4882AD8814A007A29EC /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		AC97E48F2ADAD29A007A29EC /* EmptyViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyViewCell.xib; sourceTree = "<group>"; };
 		D4965C48C393B76BBE3F6ED2 /* Pods_ProjectOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 				AC5185C92AD230C700878660 /* Main.storyboard */,
 				AC5185CE2AD230C800878660 /* LaunchScreen.storyboard */,
 				AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */,
+				AC97E48F2ADAD29A007A29EC /* EmptyViewCell.xib */,
 				AC97E4862AD87F4A007A29EC /* ListLogoViewModel.swift */,
 				AC6D20F52AD3732D00C5ABF8 /* LogoTableViewCell.swift */,
 				AC6D20F62AD3732D00C5ABF8 /* LogoTableViewCell.xib */,
@@ -223,6 +226,7 @@
 				AC5185CD2AD230C800878660 /* Assets.xcassets in Resources */,
 				AC6D20F82AD3732D00C5ABF8 /* LogoTableViewCell.xib in Resources */,
 				AC5185CB2AD230C700878660 /* Main.storyboard in Resources */,
+				AC97E4912ADAD29A007A29EC /* EmptyViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

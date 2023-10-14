@@ -34,11 +34,7 @@ public class NetworkService: ServiceProtocol {
         case 200...299:
             do {
                 let response = try JSONDecoder().decode(T.self, from: data)
-                
-                #if DEBUG
                 prettyJson(model: response)
-                #endif
-                
                 return response
             } catch {
                 throw NetworkError.parseCodable
@@ -49,6 +45,7 @@ public class NetworkService: ServiceProtocol {
     }
     
     private func prettyJson<T: Codable>(model: T) {
+        #if DEBUG
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
         if let data = try? encoder.encode(model), let json = String(data: data, encoding: .utf8) {
@@ -56,5 +53,6 @@ public class NetworkService: ServiceProtocol {
             print(json)
             print("RESPONSE END -----------------------------------------------")
         }
+        #endif
     }
 }
