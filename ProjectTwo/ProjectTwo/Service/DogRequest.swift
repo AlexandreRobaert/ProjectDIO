@@ -1,18 +1,18 @@
 //
-//  FindLogoRequest.swift
-//  ProjectOne
+//  DogRequest.swift
+//  ProjectTwo
 //
-//  Created by Alexandre Robaert on 08/10/23.
+//  Created by Alexandre Robaert on 14/10/23.
 //
 
 import Foundation
 
-public enum FindLogoRequest: Request {
+public enum DogRequest: Request {
 
-    case logo(name: String)
+    case dog(name: String)
     
     public var path: String {
-        "/v1/logo"
+        "/v1/dogs"
     }
     
     public var headers: [String : Any]? {
@@ -23,7 +23,7 @@ public enum FindLogoRequest: Request {
     }
     
     public var queryItems: [URLQueryItem]? {
-        if case .logo(let name) = self {
+        if case .dog(let name) = self {
             return [.init(name: "name", value: name)]
         }
         return nil

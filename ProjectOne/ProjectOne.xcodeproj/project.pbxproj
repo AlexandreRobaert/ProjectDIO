@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FBF7D917DF9AD39E5C5D734 /* Pods_ProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4965C48C393B76BBE3F6ED2 /* Pods_ProjectOne.framework */; };
+		AC17AE7F2ADB52D5002B1D7C /* DogRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE7E2ADB52D5002B1D7C /* DogRequest.swift */; };
 		AC5185C42AD230C600878660 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185C32AD230C600878660 /* AppDelegate.swift */; };
 		AC5185C62AD230C600878660 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185C52AD230C600878660 /* SceneDelegate.swift */; };
 		AC5185C82AD230C600878660 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185C72AD230C600878660 /* HomeViewController.swift */; };
@@ -19,7 +20,6 @@
 		AC5185DE2AD3156D00878660 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185DD2AD3156D00878660 /* HttpMethod.swift */; };
 		AC5185E02AD315B000878660 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185DF2AD315B000878660 /* RequestProtocol.swift */; };
 		AC5185E22AD315CB00878660 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185E12AD315CB00878660 /* NetworkError.swift */; };
-		AC5185E72AD326C200878660 /* FindLogoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185E62AD326C200878660 /* FindLogoRequest.swift */; };
 		AC5185EA2AD32B8300878660 /* LogoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5185E92AD32B8300878660 /* LogoModel.swift */; };
 		AC6D20F42AD3719800C5ABF8 /* ListLogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */; };
 		AC6D20F72AD3732D00C5ABF8 /* LogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D20F52AD3732D00C5ABF8 /* LogoTableViewCell.swift */; };
@@ -34,6 +34,7 @@
 /* Begin PBXFileReference section */
 		1D44624B3F1338031625A25C /* Pods-ProjectOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectOne.debug.xcconfig"; path = "Target Support Files/Pods-ProjectOne/Pods-ProjectOne.debug.xcconfig"; sourceTree = "<group>"; };
 		49D45A9C9D23CAC1B9DDF1FD /* Pods-ProjectOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectOne.release.xcconfig"; path = "Target Support Files/Pods-ProjectOne/Pods-ProjectOne.release.xcconfig"; sourceTree = "<group>"; };
+		AC17AE7E2ADB52D5002B1D7C /* DogRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogRequest.swift; sourceTree = "<group>"; };
 		AC5185C02AD230C600878660 /* ProjectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5185C32AD230C600878660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC5185C52AD230C600878660 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		AC5185DD2AD3156D00878660 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		AC5185DF2AD315B000878660 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		AC5185E12AD315CB00878660 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		AC5185E62AD326C200878660 /* FindLogoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLogoRequest.swift; sourceTree = "<group>"; };
 		AC5185E92AD32B8300878660 /* LogoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoModel.swift; sourceTree = "<group>"; };
 		AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLogoViewController.swift; sourceTree = "<group>"; };
 		AC6D20F52AD3732D00C5ABF8 /* LogoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTableViewCell.swift; sourceTree = "<group>"; };
@@ -116,12 +116,12 @@
 		AC5185E32AD315E900878660 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				AC17AE7E2ADB52D5002B1D7C /* DogRequest.swift */,
 				AC5185D92AD30F4600878660 /* NetworkService.swift */,
 				AC5185E12AD315CB00878660 /* NetworkError.swift */,
 				AC5185DF2AD315B000878660 /* RequestProtocol.swift */,
 				AC5185DD2AD3156D00878660 /* HttpMethod.swift */,
 				AC5185DB2AD313CE00878660 /* ServiceProtocol.swift */,
-				AC5185E62AD326C200878660 /* FindLogoRequest.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -292,10 +292,10 @@
 				AC6D20F72AD3732D00C5ABF8 /* LogoTableViewCell.swift in Sources */,
 				AC5185E22AD315CB00878660 /* NetworkError.swift in Sources */,
 				AC5185C42AD230C600878660 /* AppDelegate.swift in Sources */,
-				AC5185E72AD326C200878660 /* FindLogoRequest.swift in Sources */,
 				AC5185DE2AD3156D00878660 /* HttpMethod.swift in Sources */,
 				AC5185EA2AD32B8300878660 /* LogoModel.swift in Sources */,
 				AC5185C62AD230C600878660 /* SceneDelegate.swift in Sources */,
+				AC17AE7F2ADB52D5002B1D7C /* DogRequest.swift in Sources */,
 				AC97E4872AD87F4A007A29EC /* ListLogoViewModel.swift in Sources */,
 				AC97E4892AD8814A007A29EC /* Observable.swift in Sources */,
 				AC5185DA2AD30F4600878660 /* NetworkService.swift in Sources */,
