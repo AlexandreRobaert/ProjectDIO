@@ -27,6 +27,8 @@
 		AC97E4872AD87F4A007A29EC /* ListLogoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97E4862AD87F4A007A29EC /* ListLogoViewModel.swift */; };
 		AC97E4892AD8814A007A29EC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97E4882AD8814A007A29EC /* Observable.swift */; };
 		AC97E4912ADAD29A007A29EC /* EmptyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC97E48F2ADAD29A007A29EC /* EmptyViewCell.xib */; };
+		AC97E4962ADB1739007A29EC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97E4942ADB1739007A29EC /* DetailsViewController.swift */; };
+		AC97E4992ADB1B93007A29EC /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97E4982ADB1B93007A29EC /* UIViewController+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		AC97E4862AD87F4A007A29EC /* ListLogoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLogoViewModel.swift; sourceTree = "<group>"; };
 		AC97E4882AD8814A007A29EC /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		AC97E48F2ADAD29A007A29EC /* EmptyViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyViewCell.xib; sourceTree = "<group>"; };
+		AC97E4942ADB1739007A29EC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		AC97E4982ADB1B93007A29EC /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 		D4965C48C393B76BBE3F6ED2 /* Pods_ProjectOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,10 +133,12 @@
 				AC5185C92AD230C700878660 /* Main.storyboard */,
 				AC5185CE2AD230C800878660 /* LaunchScreen.storyboard */,
 				AC6D20F32AD3719800C5ABF8 /* ListLogoViewController.swift */,
+				AC97E4942ADB1739007A29EC /* DetailsViewController.swift */,
 				AC97E48F2ADAD29A007A29EC /* EmptyViewCell.xib */,
 				AC97E4862AD87F4A007A29EC /* ListLogoViewModel.swift */,
 				AC6D20F52AD3732D00C5ABF8 /* LogoTableViewCell.swift */,
 				AC6D20F62AD3732D00C5ABF8 /* LogoTableViewCell.xib */,
+				AC97E4982ADB1B93007A29EC /* UIViewController+extension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC97E4992ADB1B93007A29EC /* UIViewController+extension.swift in Sources */,
 				AC6D20F42AD3719800C5ABF8 /* ListLogoViewController.swift in Sources */,
 				AC5185C82AD230C600878660 /* HomeViewController.swift in Sources */,
 				AC6D20F72AD3732D00C5ABF8 /* LogoTableViewCell.swift in Sources */,
@@ -293,6 +300,7 @@
 				AC5185DA2AD30F4600878660 /* NetworkService.swift in Sources */,
 				AC5185DC2AD313CE00878660 /* ServiceProtocol.swift in Sources */,
 				AC5185E02AD315B000878660 /* RequestProtocol.swift in Sources */,
+				AC97E4962ADB1739007A29EC /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

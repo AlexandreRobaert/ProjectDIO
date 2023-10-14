@@ -129,7 +129,7 @@ extension ListLogoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if let model = viewModel.dataSource.value?[indexPath.row] {
-            print("Click ->", model.name)
+            navigationController?.pushViewController(DetailsViewController(model: model), animated: true)
         }
     }
 }
