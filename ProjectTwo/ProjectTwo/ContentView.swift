@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let service: ServiceProtocol = NetworkService()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")

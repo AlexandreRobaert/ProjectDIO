@@ -11,7 +11,15 @@
 		AC118B302ADB4B4600E86B5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC118B2F2ADB4B4600E86B5F /* ContentView.swift */; };
 		AC118B322ADB4B4700E86B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC118B312ADB4B4700E86B5F /* Assets.xcassets */; };
 		AC118B352ADB4B4700E86B5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC118B342ADB4B4700E86B5F /* Preview Assets.xcassets */; };
-		AC17AE7D2ADB5079002B1D7C /* Service in Resources */ = {isa = PBXBuildFile; fileRef = AC17AE7C2ADB5079002B1D7C /* Service */; };
+		AC17AE822ADB5459002B1D7C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AC17AE812ADB5459002B1D7C /* Kingfisher */; };
+		AC17AE992ADB555D002B1D7C /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE932ADB555D002B1D7C /* ServiceProtocol.swift */; };
+		AC17AE9A2ADB555D002B1D7C /* DogRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE942ADB555D002B1D7C /* DogRequest.swift */; };
+		AC17AE9B2ADB555D002B1D7C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE952ADB555D002B1D7C /* NetworkService.swift */; };
+		AC17AE9C2ADB555D002B1D7C /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE962ADB555D002B1D7C /* HttpMethod.swift */; };
+		AC17AE9D2ADB555D002B1D7C /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE972ADB555D002B1D7C /* RequestProtocol.swift */; };
+		AC17AE9E2ADB555D002B1D7C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE982ADB555D002B1D7C /* NetworkError.swift */; };
+		AC1C6CBE2ADB56AC00E0FCED /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C6CBD2ADB56AC00E0FCED /* DogModel.swift */; };
+		AC1C6CC12ADB5A4F00E0FCED /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C6CC02ADB5A4F00E0FCED /* UIImageView+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +29,14 @@
 		AC118B312ADB4B4700E86B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC118B342ADB4B4700E86B5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC118B3B2ADB4CFF00E86B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		AC17AE7C2ADB5079002B1D7C /* Service */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Service; sourceTree = "<group>"; };
+		AC17AE932ADB555D002B1D7C /* ServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		AC17AE942ADB555D002B1D7C /* DogRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogRequest.swift; sourceTree = "<group>"; };
+		AC17AE952ADB555D002B1D7C /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AC17AE962ADB555D002B1D7C /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		AC17AE972ADB555D002B1D7C /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		AC17AE982ADB555D002B1D7C /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AC1C6CBD2ADB56AC00E0FCED /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
+		AC1C6CC02ADB5A4F00E0FCED /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC17AE822ADB5459002B1D7C /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +70,9 @@
 		AC118B2C2ADB4B4600E86B5F /* ProjectTwo */ = {
 			isa = PBXGroup;
 			children = (
-				AC17AE7C2ADB5079002B1D7C /* Service */,
+				AC1C6CBF2ADB59C000E0FCED /* Commons */,
+				AC17AE9F2ADB55B3002B1D7C /* Models */,
+				AC17AE922ADB555D002B1D7C /* Service */,
 				AC118B3B2ADB4CFF00E86B5F /* Info.plist */,
 				AC118B2D2ADB4B4600E86B5F /* ProjectTwoApp.swift */,
 				AC118B2F2ADB4B4600E86B5F /* ContentView.swift */,
@@ -70,6 +88,35 @@
 				AC118B342ADB4B4700E86B5F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC17AE922ADB555D002B1D7C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AC17AE932ADB555D002B1D7C /* ServiceProtocol.swift */,
+				AC17AE942ADB555D002B1D7C /* DogRequest.swift */,
+				AC17AE952ADB555D002B1D7C /* NetworkService.swift */,
+				AC17AE962ADB555D002B1D7C /* HttpMethod.swift */,
+				AC17AE972ADB555D002B1D7C /* RequestProtocol.swift */,
+				AC17AE982ADB555D002B1D7C /* NetworkError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AC17AE9F2ADB55B3002B1D7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC1C6CBD2ADB56AC00E0FCED /* DogModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC1C6CBF2ADB59C000E0FCED /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				AC1C6CC02ADB5A4F00E0FCED /* UIImageView+extension.swift */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,6 +135,9 @@
 			dependencies = (
 			);
 			name = ProjectTwo;
+			packageProductDependencies = (
+				AC17AE812ADB5459002B1D7C /* Kingfisher */,
+			);
 			productName = ProjectTwo;
 			productReference = AC118B2A2ADB4B4600E86B5F /* ProjectTwo.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +166,9 @@
 				Base,
 			);
 			mainGroup = AC118B212ADB4B4600E86B5F;
+			packageReferences = (
+				AC17AE802ADB5459002B1D7C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = AC118B2B2ADB4B4600E86B5F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +183,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC17AE7D2ADB5079002B1D7C /* Service in Resources */,
 				AC118B352ADB4B4700E86B5F /* Preview Assets.xcassets in Resources */,
 				AC118B322ADB4B4700E86B5F /* Assets.xcassets in Resources */,
 			);
@@ -143,8 +195,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1C6CC12ADB5A4F00E0FCED /* UIImageView+extension.swift in Sources */,
+				AC17AE9B2ADB555D002B1D7C /* NetworkService.swift in Sources */,
+				AC17AE9E2ADB555D002B1D7C /* NetworkError.swift in Sources */,
+				AC17AE992ADB555D002B1D7C /* ServiceProtocol.swift in Sources */,
 				AC118B302ADB4B4600E86B5F /* ContentView.swift in Sources */,
+				AC17AE9A2ADB555D002B1D7C /* DogRequest.swift in Sources */,
+				AC17AE9C2ADB555D002B1D7C /* HttpMethod.swift in Sources */,
 				AC118B2E2ADB4B4600E86B5F /* ProjectTwoApp.swift in Sources */,
+				AC1C6CBE2ADB56AC00E0FCED /* DogModel.swift in Sources */,
+				AC17AE9D2ADB555D002B1D7C /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +342,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProjectTwo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Find Dog";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,9 +356,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.robaert.ProjectTwo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,11 +377,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProjectTwo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Find Dog";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,9 +391,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.robaert.ProjectTwo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -352,6 +422,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC17AE802ADB5459002B1D7C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC17AE812ADB5459002B1D7C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC17AE802ADB5459002B1D7C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC118B222ADB4B4600E86B5F /* Project object */;
 }
