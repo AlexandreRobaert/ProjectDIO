@@ -23,14 +23,14 @@ final class ListLogoViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .preferredFont(forTextStyle: .extraLargeTitle)
-        label.text = "Pesquisa de marcas"
+        label.text = String(localized: "Pesquisa de marcas")
         return label
     }()
     
     private lazy var search: UISearchBar = {
         let search = UISearchBar()
         search.translatesAutoresizingMaskIntoConstraints = false
-        search.placeholder = "Pesquise sua marca"
+        search.placeholder = String(localized: "Pesquise sua marca")
         search.delegate = self
         search.isTranslucent = false
         search.sizeToFit()
@@ -70,7 +70,7 @@ final class ListLogoViewController: UIViewController {
     
     private func setupView() {
         view.backgroundColor = .systemBackground
-        title = "Pesquisar"
+        title = String(localized: "Pesquisar")
         view.addSubview(rootStack)
         rootStack.addArrangedSubview(titleList)
         rootStack.addArrangedSubview(search)
