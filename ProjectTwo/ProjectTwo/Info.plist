@@ -4,6 +4,15 @@
 <dict>
 	<key>BaseURL</key>
 	<string>api.api-ninjas.com</string>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>AccentColor</string>
+		<key>UIImageName</key>
+		<string>dog</string>
+		<key>UIImageRespectsSafeAreaInsets</key>
+		<true/>
+	</dict>
 	<key>X-Api-Key</key>
 	<string>cufRlMjsrqRLNFTtK9J+aQ==Pq25T3zOrN757bBX</string>
 </dict>

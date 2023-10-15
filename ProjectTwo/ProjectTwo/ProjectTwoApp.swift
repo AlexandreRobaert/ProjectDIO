@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ProjectTwoApp: App {
+   
+    @StateObject var storeModel: HomeStoreModel = HomeStoreModel(service: NetworkService())
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreenView().environmentObject(storeModel)
         }
     }
 }

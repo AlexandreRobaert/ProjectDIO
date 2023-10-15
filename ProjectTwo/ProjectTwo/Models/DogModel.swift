@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DogModel: Codable {
+class DogModel: Codable, ObservableObject {
     enum CodingKeys: String, CodingKey, CaseIterable {
         case barking
         case coatLength = "coat_length"
@@ -59,4 +59,34 @@ struct DogModel: Codable {
     let protectiveness: Int
     let shedding: Int
     let trainability: Int
+    
+    init(barking: Int, coatLength: Int, drooling: Int, energy: Int, goodWithChildren: Int, goodWithOtherDogs: Int, 
+         goodWithStrangers: Int, grooming: Int, imageLink: URL, maxHeightFemale: Int, maxHeightMale: Int, maxLifeExpectancy: Int,
+         maxWeightFemale: Int, maxWeightMale: Int, minHeightFemale: Int, minHeightMale: Int, minLifeExpectancy: Int,
+         minWeightFemale: Int, minWeightMale: Int, name: String, playfulness: Int, protectiveness: Int, shedding: Int, trainability: Int) {
+        self.barking = barking
+        self.coatLength = coatLength
+        self.drooling = drooling
+        self.energy = energy
+        self.goodWithChildren = goodWithChildren
+        self.goodWithOtherDogs = goodWithOtherDogs
+        self.goodWithStrangers = goodWithStrangers
+        self.grooming = grooming
+        self.imageLink = imageLink
+        self.maxHeightFemale = maxHeightFemale
+        self.maxHeightMale = maxHeightMale
+        self.maxLifeExpectancy = maxLifeExpectancy
+        self.maxWeightFemale = maxWeightFemale
+        self.maxWeightMale = maxWeightMale
+        self.minHeightFemale = minHeightFemale
+        self.minHeightMale = minHeightMale
+        self.minLifeExpectancy = minLifeExpectancy
+        self.minWeightFemale = minWeightFemale
+        self.minWeightMale = minWeightMale
+        self.name = name
+        self.playfulness = playfulness
+        self.protectiveness = protectiveness
+        self.shedding = shedding
+        self.trainability = trainability
+    }
 }

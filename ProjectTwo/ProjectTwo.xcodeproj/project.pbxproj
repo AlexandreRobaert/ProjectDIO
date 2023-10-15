@@ -8,35 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		AC118B2E2ADB4B4600E86B5F /* ProjectTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC118B2D2ADB4B4600E86B5F /* ProjectTwoApp.swift */; };
-		AC118B302ADB4B4600E86B5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC118B2F2ADB4B4600E86B5F /* ContentView.swift */; };
+		AC118B302ADB4B4600E86B5F /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC118B2F2ADB4B4600E86B5F /* HomeScreenView.swift */; };
 		AC118B322ADB4B4700E86B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC118B312ADB4B4700E86B5F /* Assets.xcassets */; };
 		AC118B352ADB4B4700E86B5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC118B342ADB4B4700E86B5F /* Preview Assets.xcassets */; };
 		AC17AE822ADB5459002B1D7C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AC17AE812ADB5459002B1D7C /* Kingfisher */; };
 		AC17AE992ADB555D002B1D7C /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE932ADB555D002B1D7C /* ServiceProtocol.swift */; };
-		AC17AE9A2ADB555D002B1D7C /* DogRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE942ADB555D002B1D7C /* DogRequest.swift */; };
+		AC17AE9A2ADB555D002B1D7C /* AnimalsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE942ADB555D002B1D7C /* AnimalsRequest.swift */; };
 		AC17AE9B2ADB555D002B1D7C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE952ADB555D002B1D7C /* NetworkService.swift */; };
 		AC17AE9C2ADB555D002B1D7C /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE962ADB555D002B1D7C /* HttpMethod.swift */; };
 		AC17AE9D2ADB555D002B1D7C /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE972ADB555D002B1D7C /* RequestProtocol.swift */; };
 		AC17AE9E2ADB555D002B1D7C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17AE982ADB555D002B1D7C /* NetworkError.swift */; };
 		AC1C6CBE2ADB56AC00E0FCED /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C6CBD2ADB56AC00E0FCED /* DogModel.swift */; };
 		AC1C6CC12ADB5A4F00E0FCED /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C6CC02ADB5A4F00E0FCED /* UIImageView+extension.swift */; };
+		AC1C6CC52ADB7D0D00E0FCED /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C6CC42ADB7D0D00E0FCED /* Dog.swift */; };
+		AC1C6CC72ADB80A400E0FCED /* HomeStoreMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C6CC62ADB80A400E0FCED /* HomeStoreMode.swift */; };
+		AC1C6CCB2ADC2F9500E0FCED /* DogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C6CCA2ADC2F9500E0FCED /* DogDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC118B2A2ADB4B4600E86B5F /* ProjectTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC118B2D2ADB4B4600E86B5F /* ProjectTwoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTwoApp.swift; sourceTree = "<group>"; };
-		AC118B2F2ADB4B4600E86B5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC118B2F2ADB4B4600E86B5F /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		AC118B312ADB4B4700E86B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC118B342ADB4B4700E86B5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC118B3B2ADB4CFF00E86B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AC17AE932ADB555D002B1D7C /* ServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
-		AC17AE942ADB555D002B1D7C /* DogRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogRequest.swift; sourceTree = "<group>"; };
+		AC17AE942ADB555D002B1D7C /* AnimalsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsRequest.swift; sourceTree = "<group>"; };
 		AC17AE952ADB555D002B1D7C /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AC17AE962ADB555D002B1D7C /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		AC17AE972ADB555D002B1D7C /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		AC17AE982ADB555D002B1D7C /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		AC1C6CBD2ADB56AC00E0FCED /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 		AC1C6CC02ADB5A4F00E0FCED /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
+		AC1C6CC42ADB7D0D00E0FCED /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		AC1C6CC62ADB80A400E0FCED /* HomeStoreMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoreMode.swift; sourceTree = "<group>"; };
+		AC1C6CCA2ADC2F9500E0FCED /* DogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,13 +76,13 @@
 		AC118B2C2ADB4B4600E86B5F /* ProjectTwo */ = {
 			isa = PBXGroup;
 			children = (
+				AC118B2D2ADB4B4600E86B5F /* ProjectTwoApp.swift */,
+				AC118B3B2ADB4CFF00E86B5F /* Info.plist */,
 				AC1C6CBF2ADB59C000E0FCED /* Commons */,
 				AC17AE9F2ADB55B3002B1D7C /* Models */,
 				AC17AE922ADB555D002B1D7C /* Service */,
-				AC118B3B2ADB4CFF00E86B5F /* Info.plist */,
-				AC118B2D2ADB4B4600E86B5F /* ProjectTwoApp.swift */,
-				AC118B2F2ADB4B4600E86B5F /* ContentView.swift */,
-				AC118B312ADB4B4700E86B5F /* Assets.xcassets */,
+				AC1C6CC22ADB7C7400E0FCED /* View */,
+				AC1C6CC32ADB7C8600E0FCED /* Resources */,
 				AC118B332ADB4B4700E86B5F /* Preview Content */,
 			);
 			path = ProjectTwo;
@@ -94,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				AC17AE932ADB555D002B1D7C /* ServiceProtocol.swift */,
-				AC17AE942ADB555D002B1D7C /* DogRequest.swift */,
+				AC17AE942ADB555D002B1D7C /* AnimalsRequest.swift */,
 				AC17AE952ADB555D002B1D7C /* NetworkService.swift */,
 				AC17AE962ADB555D002B1D7C /* HttpMethod.swift */,
 				AC17AE972ADB555D002B1D7C /* RequestProtocol.swift */,
@@ -107,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				AC1C6CBD2ADB56AC00E0FCED /* DogModel.swift */,
+				AC1C6CC42ADB7D0D00E0FCED /* Dog.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,6 +124,24 @@
 				AC1C6CC02ADB5A4F00E0FCED /* UIImageView+extension.swift */,
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		AC1C6CC22ADB7C7400E0FCED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC118B2F2ADB4B4600E86B5F /* HomeScreenView.swift */,
+				AC1C6CC62ADB80A400E0FCED /* HomeStoreMode.swift */,
+				AC1C6CCA2ADC2F9500E0FCED /* DogDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC1C6CC32ADB7C8600E0FCED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC118B312ADB4B4700E86B5F /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,10 +224,13 @@
 				AC17AE9B2ADB555D002B1D7C /* NetworkService.swift in Sources */,
 				AC17AE9E2ADB555D002B1D7C /* NetworkError.swift in Sources */,
 				AC17AE992ADB555D002B1D7C /* ServiceProtocol.swift in Sources */,
-				AC118B302ADB4B4600E86B5F /* ContentView.swift in Sources */,
-				AC17AE9A2ADB555D002B1D7C /* DogRequest.swift in Sources */,
+				AC118B302ADB4B4600E86B5F /* HomeScreenView.swift in Sources */,
+				AC1C6CC52ADB7D0D00E0FCED /* Dog.swift in Sources */,
+				AC1C6CCB2ADC2F9500E0FCED /* DogDetailView.swift in Sources */,
+				AC17AE9A2ADB555D002B1D7C /* AnimalsRequest.swift in Sources */,
 				AC17AE9C2ADB555D002B1D7C /* HttpMethod.swift in Sources */,
 				AC118B2E2ADB4B4600E86B5F /* ProjectTwoApp.swift in Sources */,
+				AC1C6CC72ADB80A400E0FCED /* HomeStoreMode.swift in Sources */,
 				AC1C6CBE2ADB56AC00E0FCED /* DogModel.swift in Sources */,
 				AC17AE9D2ADB555D002B1D7C /* RequestProtocol.swift in Sources */,
 			);
@@ -346,7 +374,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -381,7 +408,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (

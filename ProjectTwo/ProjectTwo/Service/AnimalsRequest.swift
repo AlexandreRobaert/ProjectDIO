@@ -1,5 +1,5 @@
 //
-//  DogRequest.swift
+//  AnimalsRequest.swift
 //  ProjectTwo
 //
 //  Created by Alexandre Robaert on 14/10/23.
@@ -7,12 +7,18 @@
 
 import Foundation
 
-public enum DogRequest: Request {
+public enum AnimalsRequest: Request {
 
     case dog(name: String)
+    case informationDog
     
     public var path: String {
-        "/v1/dogs"
+        switch self {
+        case .dog:
+            "/v1/dogs"
+        case .informationDog:
+            "/v1/animals"
+        }
     }
     
     public var headers: [String : Any]? {
@@ -23,10 +29,13 @@ public enum DogRequest: Request {
     }
     
     public var queryItems: [URLQueryItem]? {
-        if case .dog(let name) = self {
+        
+        switch self {
+        case .dog(let name):
             return [.init(name: "name", value: name)]
+        case .informationDog:
+            return [.init(name: "name", value: "dog")]
         }
-        return nil
     }
     
     public var body: [String : Any]? { nil }

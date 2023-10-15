@@ -37,6 +37,7 @@ public class NetworkService: ServiceProtocol {
                 prettyJson(model: response)
                 return response
             } catch {
+                showLogParse(error: error)
                 throw NetworkError.parseCodable
             }
         default:
@@ -53,6 +54,15 @@ public class NetworkService: ServiceProtocol {
             print(json)
             print("RESPONSE END -----------------------------------------------")
         }
+        #endif
+    }
+    
+    private func showLogParse(error: Error) {
+        #if DEBUG
+        print("")
+        print("PARSE ERROR ------------------------------->")
+        print((error as CustomDebugStringConvertible).debugDescription)
+        print("PARSE ERROR ------------------------------->")
         #endif
     }
 }
