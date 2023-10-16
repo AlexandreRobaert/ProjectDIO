@@ -68,6 +68,10 @@ final class ListLogoViewController: UIViewController {
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     private func setupView() {
         view.backgroundColor = .systemBackground
         title = String(localized: "Pesquisar")
@@ -134,14 +138,13 @@ extension ListLogoViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-
 extension ListLogoViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let text = searchBar.text {
             fetchLogo(text: text)
         }
-        resignFirstResponder()
+        view.endEditing(true)
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
